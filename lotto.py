@@ -7,7 +7,7 @@ def lottó_játék():
     print("2. Hatoslottó (6 szám, 1-45)")
     print("3. Skandináv lottó (7 szám, 1-35)")
     
-    választás = int(input("Válaszd ki a lottó típusát (1/2/3): "))
+    választás = int(input("Válaszd ki a lottó típusát (1/2/3): (￣y▽￣)╭ Ohohoho....."))
     
     if választás == 1:
         max_szám = 90
@@ -19,7 +19,7 @@ def lottó_játék():
         max_szám = 35
         tipp_szám = 7
     else:
-        print("Érvénytelen választás. Kilépés...")
+        print("Érvénytelen választás. Kilépés... 👋")
         return
     
     print(f"\nKérlek, add meg a {tipp_szám} tippedet (1-{max_szám} között):")
@@ -37,7 +37,7 @@ def lottó_játék():
                     tippek.append(tipp)
                     break
             except ValueError:
-                print("Érvénytelen bemenet, kérlek számot adj meg!")
+                print("Érvénytelen bemenet 😭, kérlek számot adj meg!")
     
     print("\nKöszönöm! Most sorsoljuk a nyerőszámokat...")
     nyerőszámok = random.sample(range(1, max_szám + 1), tipp_szám)
@@ -48,9 +48,8 @@ def lottó_játék():
     print(f"Találatok száma: {találatok} / {tipp_szám}")
     
     if találatok == tipp_szám:
-        print("Gratulálunk! Telitalálat!")
+        print("Szerencsés! Telitalálat! 👌")
     else:
         print("Köszönjük, hogy játszottál! Próbáld újra!")
 
 lottó_játék()
-
