@@ -32,7 +32,7 @@ def lottó_játék():
                 if tipp < 1 or tipp > max_szám:
                     print(f"A számnak 1 és {max_szám} között kell lennie!")
                 elif tipp in tippek:
-                    print("Ezt a számot már megadtad!")
+                    print("Ezt a számot már egyszer megadtad!")
                 else:
                     tippek.append(tipp)
                     break
