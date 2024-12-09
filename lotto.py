@@ -39,7 +39,6 @@ def lottó_játék():
             except ValueError:
                 print("Érvénytelen bemenet 😭, kérlek számot adj meg!")
     
-    print("\nKöszönöm! Most sorsoljuk a nyerőszámokat...")
     nyerőszámok = random.sample(range(1, max_szám + 1), tipp_szám)
     print(f"Nyerőszámok: {sorted(nyerőszámok)}")
     
