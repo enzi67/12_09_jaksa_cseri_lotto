@@ -7,7 +7,7 @@ def lottó_játék():
     print("2. Hatoslottó (6 szám, 1-45)")
     print("3. Skandináv lottó (7 szám, 1-35)")
     
-    választás = int(input("Válaszd ki a lottó típusát (1/2/3): (￣y▽￣)╭ Ohohoho....."))
+    választás = int(input("Válaszd ki a lottó típusát (1/2/3): "))
     
     if választás == 1:
         max_szám = 90
@@ -19,7 +19,7 @@ def lottó_játék():
         max_szám = 35
         tipp_szám = 7
     else:
-        print("Érvénytelen választás. Kilépés... 👋")
+        print("Érvénytelen választás (⊙ˍ⊙). Kilépés... 👋")
         return
     
     print(f"\nKérlek, add meg a {tipp_szám} tippedet (1-{max_szám} között):")
